@@ -11,6 +11,7 @@ import Checkout from './components/Checkout';
 import Login from './pages/Login';
 import { BookingProvider } from './components/BookingContext';
 import PropertyType from './components/PropertyType';
+import Register from './components/Register';
 
 function App() {
   const [filters, setFilters] = useState({});
@@ -39,6 +40,9 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Login onLogin={handleLogin} />} />
+            <Route path="/register" element={<Register/>} />
+          
+            
            
             
           </Routes>

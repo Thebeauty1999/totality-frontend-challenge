@@ -44,7 +44,7 @@ const Nav = ({ user , onLogout}) => {
                 <span className="mr-4">Hello, {user.name}!</span>
                 <button
                   onClick={() => onLogout()}  
-                  className="bg-green-500 text-white p-2 rounded-md hover:bg-red-600 transition duration-200"
+                  className="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 transition duration-200"
                 >
                   Logout
                 </button>
@@ -54,7 +54,14 @@ const Nav = ({ user , onLogout}) => {
                 Login
               </Link>
             )}
+            <div>
+            <Link to="/register" className=" ml-1 p-2 pr-4 pl-2 text-white bg-green-400 h-[30px] w-[30%] text-center border rounded">
+                Register
+              </Link>
           </div>
+          </div>
+
+          
         </div>
       </div>
     </nav>
